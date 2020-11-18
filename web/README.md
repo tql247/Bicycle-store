@@ -1,5 +1,5 @@
 # Bicycle-store
-Simple web application where user can add add/remove a product to his basket. Build with React, FastAPI. Using SQLite as database.
+Simple web application where user can add add/remove a product to his basket. Build with React, FastAPI. Using SQLite as database. Because it simple example, so no security approach was implemented.
 
 ### Task
 - [x] SQLite

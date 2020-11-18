@@ -6,11 +6,11 @@ import getListBasket from "../../service/getListBasket";
 export default class Basket extends React.Component {
   state = {
     basket: [],
-    isLoad: false
+    isLoad: false,
   };
 
   async componentDidMount() {
-    await getListBasket(this)
+    await getListBasket(this);
   }
 
   render() {
@@ -20,8 +20,8 @@ export default class Basket extends React.Component {
         {this.state.basket.map((value, index) => {
           return (
             <div key={index} className={styles.rowData}>
-              <div >{value[1]}</div>
-              <RemoveButton />
+              <div>{value[1]}</div>
+              <RemoveButton id_user={1} id_product={value[0]} />
             </div>
           );
         })}
