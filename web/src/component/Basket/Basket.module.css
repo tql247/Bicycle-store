@@ -1,0 +1,11 @@
+.title {
+    font-weight: bold;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+
+.rowData {
+    display: flex;
+    justify-content: space-between;
+}

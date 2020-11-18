@@ -1,0 +1,10 @@
+.component-app {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+}
+
+.component-app > div {
+  flex-grow: 1;
+  margin: 10px;
+}

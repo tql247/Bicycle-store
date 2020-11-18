@@ -1,0 +1,10 @@
+.title {
+    font-weight: bold;
+    background-color: tomato;
+    text-align: center;
+}
+
+.rowData {
+    display: flex;
+    justify-content: space-between;
+}
