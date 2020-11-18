@@ -1,6 +1,13 @@
 # Bicycle-store
 Simple web application where user can add add/remove a product to his basket. Build with React, FastAPI. Using SQLite as database.
 
+### Task
+- [x] SQLite
+- [x] Fast API
+- [x] React
+- [ ] Docker
+- [ ] Unit test
+
 ## Install
 ---
 ### SQLite (On windows)
@@ -26,7 +33,7 @@ pip install uvicorn
 ### Run server API
 ```
 cd server/
-uvicorn main:app --reload
+uvicorn main:app --reload --host localhost --port 8000
 ```
 
 ### Run web

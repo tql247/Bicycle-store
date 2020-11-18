@@ -1,23 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import styles from "./ListProduct.module.css";
 import AddButton from "../AddButton/AddButton";
+import getListProduct from "../../service/getListProduct";
 
 export default class ListProduct extends React.Component {
-  static propTypes = {
-    value: PropTypes.string,
+  state = {
+    product: [],
+    isLoad: false
   };
 
+  async componentDidMount() {
+    await getListProduct(this)
+  }
 
   render() {
-    const elements = ["one", "two", "three"];
     return (
-      <div className="component-display">
-        <div className={styles.title}>List product</div>
-        {elements.map((value, index) => {
+      <div>
+        <div className={styles.title}>Product</div>
+        {this.state.product.map((value, index) => {
           return (
-            <div className={styles.rowData}>
-              <div>{value}</div>
+            <div key={index} className={styles.rowData}>
+              <div >{value[1]}</div>
               <AddButton />
             </div>
           );
