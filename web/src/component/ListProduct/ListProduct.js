@@ -8,6 +8,7 @@ export default class ListProduct extends React.Component {
     value: PropTypes.string,
   };
 
+
   render() {
     const elements = ["one", "two", "three"];
     return (
@@ -16,7 +17,7 @@ export default class ListProduct extends React.Component {
         {elements.map((value, index) => {
           return (
             <div className={styles.rowData}>
-              <div key={index}>{value}</div>
+              <div>{value}</div>
               <AddButton />
             </div>
           );
