@@ -15,7 +15,7 @@ RUN mkdir web
 COPY web/package.json ./web/
 RUN cd web && npm install
 
-RUN npm install react-scripts@3.4.1 -g --silent
+RUN npm install react-scripts
 
 
 RUN pip3 install fastapi
