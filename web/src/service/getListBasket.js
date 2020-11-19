@@ -11,7 +11,7 @@ export default async function getListBasket(obj) {
     redirect: 'follow'
     };
 
-    const response = await fetch("http://localhost:8000/basket", requestOptions)
+    const response = await fetch(`http://${process.env.REACT_APP_API_HOST}:${process.env.REACT_APP_API_PORT}/basket`, requestOptions)
     const data = await response.json();
     obj.setState({ basket: data, isLoad: true})
 }

@@ -33,7 +33,7 @@ pip install uvicorn
 ### Run server API
 ```
 cd server/
-uvicorn main:app --reload --host localhost --port 9000
+uvicorn main:app --reload --host 0.0.0.0 --port 9000
 ```
 
 ### Run web

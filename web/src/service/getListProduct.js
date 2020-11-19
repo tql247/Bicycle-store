@@ -5,7 +5,7 @@ export default async function getListProduct(obj) {
     };
 
     const response = await fetch(
-      "http://localhost:8000/product",
+      `http://${process.env.REACT_APP_API_HOST}:${process.env.REACT_APP_API_PORT}/product`,
       requestOptions,
     );
 
