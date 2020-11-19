@@ -1,8 +1,8 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import styles from "./ListProduct.module.css";
 import AddButton from "../AddButton/AddButton";
-import getListProduct from "../../service/getListProduct";
+import { getListProduct } from "../../service/index";
+
 
 export default class ListProduct extends React.Component {
   state = {

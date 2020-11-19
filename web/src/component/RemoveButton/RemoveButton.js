@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RemoveButton.module.css";
 import PropTypes from "prop-types";
-import removeProduct from "../../service/removeProduct"
+import { removeProduct } from "../../service/index"
 
 
 export default class Addbutton extends React.Component {

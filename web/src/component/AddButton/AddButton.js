@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./AddButton.module.css";
-import addProduct from "../../service/addProduct"
+import { addProduct } from "../../service/index";
 
 export default class Addbutton extends React.Component {
   static propTypes = {

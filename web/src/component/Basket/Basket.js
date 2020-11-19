@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Basket.module.css";
 import RemoveButton from "../RemoveButton/RemoveButton";
-import getListBasket from "../../service/getListBasket";
+import { getListBasket } from "../../service/index";
 
 export default class Basket extends React.Component {
   state = {
