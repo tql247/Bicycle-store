@@ -25,8 +25,8 @@ RUN pip3 install uvicorn
 COPY . .
 
 # Exports
-EXPOSE 3000
-EXPOSE 8000
+EXPOSE 5000
+EXPOSE 9000
 RUN ["chmod", "777", "/usr/src/app/run.sh"]
 ENTRYPOINT ["sh", "/usr/src/app/run.sh"]
 
