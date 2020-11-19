@@ -1,14 +1,33 @@
 version: '2.4'
 
+
 services:
-  app:
+  bicycle-store-server:
+    container_name: 
+        bicycle-store-server
     build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./:/usr/src/app
-      - /usr/src/app/node_modules # Remove this if you have pure JS dependencies
+      context: ./server
+    restart: always
     ports:
-      - "9000:9000"
-      - "3000:3000"
-    image: bicycle_store
+      - 9000:9000
+    networks: 
+      bicycle-network:
+        aliases:
+          - bicycle-store-server
+
+  bicycle-store-web:
+    container_name: 
+        bicycle-store-web
+    build:
+      context: ./web
+    restart: always
+    ports:
+      - 5000:5000
+    networks: 
+      bicycle-network:
+        aliases:
+          - bicycle-store-server
+
+networks: 
+    bicycle-network:
+        external: true
