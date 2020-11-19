@@ -1,2 +1,2 @@
 cd web && npm run start & \
-cd server && uvicorn main:app --host localhost --port 8000
+cd server && uvicorn main:app --host 0.0.0.0 --port 9000

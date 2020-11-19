@@ -9,6 +9,6 @@ services:
       - ./:/usr/src/app
       - /usr/src/app/node_modules # Remove this if you have pure JS dependencies
     ports:
-      - "8000:8000"
+      - "9000:9000"
       - "3000:3000"
     image: bicycle_store
