@@ -4,7 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from utils import create_connection, get_all_product, get_user_basket, add_to_basket, remove_from_basket
 
-database = "db\\DatabaseName.db"
+import os
+
+database = "db\DatabaseName"
 conn = create_connection(database)
 origins = [
     "http://localhost",

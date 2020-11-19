@@ -10,6 +10,8 @@ services:
     restart: always
     ports:
       - 9000:9000
+    environment:
+      - SQLITE_PATH=./db/DatabaseName.db
     networks: 
       bicycle-network:
         aliases:
