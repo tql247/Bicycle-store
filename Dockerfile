@@ -15,7 +15,7 @@ RUN mkdir web
 COPY web/package.json ./web/
 RUN cd web && npm install
 
-RUN npm install react-scripts
+RUN npm install react-scripts@3.4.1 -g --silent
 
 
 RUN pip3 install fastapi
@@ -25,7 +25,7 @@ RUN pip3 install uvicorn
 COPY . .
 
 # Exports
-EXPOSE 5000
+EXPOSE 3000
 EXPOSE 9000
 RUN ["chmod", "777", "/usr/src/app/run.sh"]
 ENTRYPOINT ["sh", "/usr/src/app/run.sh"]
