@@ -8,6 +8,7 @@ database = "db\\DatabaseName.db"
 conn = create_connection(database)
 origins = [
     "http://localhost",
+    "http://localhost:5000",
     "http://localhost:8000",
     "http://localhost:3000"
 ]
