@@ -19,7 +19,7 @@ Open 'localhost:5000' to see the result.
 ## Without docker
 
 ## Install
-### SQLite (On windows)
+### SQLite (On windows) - For dev
 1. Download `sqlite-dll-win32-x86-3330000.zip` or `sqlite-dll-win64-x64-3330000.zip` and `sqlite-tools-win32-x86-3330000.zip` [here](https://www.sqlite.org/download.html)
 2. Extract to C:\sqlite
 3. Add C:\sqlite to PATH environment variable 
