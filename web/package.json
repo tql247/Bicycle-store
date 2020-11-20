@@ -21,7 +21,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "product": "serve build"
+    "product": "serve -s build"
   },
   "prettier": {
     "trailingComma": "all"
