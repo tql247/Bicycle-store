@@ -5,7 +5,7 @@ Simple web application where user can add add/remove a product to his basket. Bu
 - [x] SQLite
 - [x] Fast API
 - [x] React
-- [ ] Docker
+- [X] Docker
 - [ ] Unit test
 
 ## Docker
@@ -13,7 +13,7 @@ Simple web application where user can add add/remove a product to his basket. Bu
 docker-compose build
 docker-compose up -d
 ```
-Open '' to see the result.
+Open 'localhost:5000' to see the result.
 
 ---
 ## Without docker
