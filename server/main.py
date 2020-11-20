@@ -7,7 +7,7 @@ import os
 
 
 database = "db\\DatabaseName.db"
-if (os.path.exists(database)):
+if (not os.path.exists(database)):
     database = "db/DatabaseName.db"
 
 conn = create_connection(database)
