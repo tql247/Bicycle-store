@@ -1,4 +1,4 @@
-__pycache__
+*__pycache__*
 node_modules
 
 # testing
@@ -10,3 +10,4 @@ build
 # misc
 .DS_Store
 npm-debug.log
+server/__pycache__/main.cpython-37.pyc
